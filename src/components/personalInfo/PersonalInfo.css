@@ -1,0 +1,30 @@
+form{
+    border: 1px solid blue;
+    height: 630px;
+}
+
+form fieldset{
+    border: none;
+}
+
+form fieldset legend{
+    font-size: 50px;
+    color: #02295A;
+}
+form fieldset p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #9699AB;
+}
+
+form fieldset label{
+}
+
+form fieldset input{
+    display: block;
+    width: 100%;
+    border: 1px solid #D6D9E6;
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+}

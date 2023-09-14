@@ -1,0 +1,19 @@
+div.container{
+    background-color: white;
+    display: flex;
+    gap: 80px;
+    justify-content: stretch;
+    align-items: center;
+    border-radius: 10px;
+    width: 1000px;
+    height: 750px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02), /* Top */
+                0px -4px 4px rgba(0, 0, 0, 0.02), /* Bottom */
+                4px 0px 4px rgba(0, 0, 0, 0.02), /* Right */
+                -4px 0px 4px rgba(0, 0, 0, 0.02); /* Left */
+}
+div.container div.sidebar{
+    margin-left: 25px;
+}
+div.container div.main{
+}
