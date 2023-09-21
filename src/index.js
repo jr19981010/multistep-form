@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { DisplayProvider } from './DisplayContext';
+import { HandleInputProvider } from './HandleInput';
+import { HandlePlanProvider } from './HandlePlan';
+import { PickAddOnsProvider } from './HandlePickAddOns';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  
+  <PickAddOnsProvider>
+  <HandlePlanProvider>
+  <HandleInputProvider>
+      <DisplayProvider>
+          <React.StrictMode>
+                <App />
+          </React.StrictMode>
+      </DisplayProvider>
+  </HandleInputProvider>
+  </HandlePlanProvider>
+  </PickAddOnsProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

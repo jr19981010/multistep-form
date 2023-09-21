@@ -1,20 +1,20 @@
 header{
-    background-image: url('../../../assets/images/bg-sidebar-desktop.svg');
+    background-image: url('../../images/bg-sidebar-desktop.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom bottom;
-    height: 700px;
-    width: 300px;
-    border-radius: 14px;
+    height: 43.75rem;
+    width: 100%;
+    border-radius: 0.875rem;
 }
 header div{
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 3.125rem 1fr;
     margin-inline: auto;
     width: 80%;
-    padding-top: 20px;
-    column-gap: 10px;
-    row-gap: 30px;
+    padding-top: 1.25rem;
+    column-gap: 0.625rem;
+    row-gap: 1.875rem;
 }
 header span.number-one{
     grid-column:  1 / 2;
@@ -32,18 +32,25 @@ header span.number-four{
     grid-column:  1 / 2;
     grid-row: 4 / 5;
 }
+
+.active-step{
+    background-color: #bce3ff;
+    color: black !important;
+    font-weight: bold;
+}
+
 header span.number-one,
 header span.number-two,
 header span.number-three,
 header span.number-four
 {
     align-self: center;
-    height: 35px;
-    width: 35px;
+    height: 2.188rem;
+    width: 2.188rem;
     border-radius: 50%;
     text-align: center;
-    padding: 5px;
-    border: 1px solid white;
+    padding: 0.313rem;
+    border: 0.063rem solid white;
     color: white;
 }
 header h1{
@@ -53,7 +60,7 @@ header h1{
 }
 header h1 span{
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     color: rgba(192, 192, 192, 1);
     font-weight: 100;
 }
@@ -75,6 +82,25 @@ header h1.step-three{
 header h1.step-four{
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+}
+@media screen and (max-width: 550px) {
+    header{
+        background-image: url('../../images/bg-sidebar-mobile.svg');
+        height: 15.625rem;
+        border-radius: 0;
+        z-index: -1;
+        background-position: center bottom 10%; 
+    }
+    header div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    header h1.step-one,
+    header h1.step-two,
+    header h1.step-three,
+    header h1.step-four{
+        display: none;
+    }
 }
 
 

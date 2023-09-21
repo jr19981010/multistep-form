@@ -1,0 +1,106 @@
+form.finishing-up{
+    width: 100%;
+    margin-bottom: 12.5rem;
+  }
+  @media screen and (max-width: 31.25rem) {
+    form.finishing-up{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+      }
+  }
+  
+  form.finishing-up fieldset.finishing-up{
+    border: none;
+  }
+  form.finishing-up fieldset.finishing-up legend{
+    font-size: clamp(2.5rem, 4vw, 3.125rem);
+    color: #02295A;
+  }
+  form.finishing-up fieldset.finishing-up > p{
+    font-size: 1rem;
+    color: #9699AB;  
+    margin-bottom: 1.875rem;
+  }
+
+form.finishing-up fieldset.finishing-up div.summary{
+    background-color: #f5f6f8;
+    padding: 0.625rem 0.625rem;
+    border-radius: 0.625rem;
+}
+form.finishing-up fieldset.finishing-up div.summary > div:first-child{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 0.063rem solid rgb(219, 217, 217);
+}
+
+form.finishing-up fieldset.finishing-up div.summary div:first-child > div:first-child{
+    display: flex;
+    flex-direction: column;
+}
+form.finishing-up fieldset.finishing-up div.summary div:first-child > div:first-child > p:first-child{
+    color: #02295A;
+    font-weight: bold;
+}
+form.finishing-up fieldset.finishing-up div.summary div:first-child > div:first-child > p:nth-child(2){
+    color: #9699AB;
+    text-decoration: underline;
+}
+form.finishing-up fieldset.finishing-up div.summary div:first-child > div:first-child > p:nth-child(2):hover{
+    color: #02295A;
+    cursor: pointer;
+    font-weight: bold;
+}
+form.finishing-up fieldset.finishing-up div.summary div:first-child div:nth-child(2){
+    display: flex;
+}
+form.finishing-up fieldset.finishing-up div.summary div:first-child div:nth-child(2) p{
+   align-self: center;
+   color: #02295A;
+   font-weight: bold;
+}
+
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem;
+
+}
+form.finishing-up fieldset.finishing-up div.summary div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem;
+}
+form.finishing-up fieldset.finishing-up div.summary div:nth-child(4){
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625rem 1.25rem;
+}
+
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(2) > p:first-child,
+
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(3) > p:first-child,
+
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(4) > p:first-child
+{
+    color:#9699AB;
+}
+
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(2) > p:nth-child(2),
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(3) > p:nth-child(2),
+form.finishing-up fieldset.finishing-up div.summary > div:nth-child(4) > p:nth-child(2){
+    color: #02295A;
+}
+
+form.finishing-up fieldset.finishing-up div.summary-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.875rem 1.25rem;
+    
+}
+form.finishing-up fieldset.finishing-up div.summary-total > p:nth-child(2){
+    color: #392dd8;
+    font-size: 1.563rem;
+    font-weight: bold;
+}

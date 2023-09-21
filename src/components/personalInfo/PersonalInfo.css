@@ -1,30 +1,65 @@
-form{
-    border: 1px solid blue;
-    height: 630px;
+form.personal-info{
+    width: 100%;
+    margin-bottom: 12.5px;
 }
-
-form fieldset{
+@media screen and (max-width: 34.375rem) {
+    form.personal-info{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-bottom: 1.25rem;
+    }
+}
+form.personal-info fieldset.personal-info{
     border: none;
 }
 
-form fieldset legend{
-    font-size: 50px;
+form.personal-info fieldset.personal-info legend{
+    font-size: clamp(2.5rem, 4vw, 3.125rem);
     color: #02295A;
 }
-form fieldset p{
-    font-size: 16px;
-    margin-bottom: 30px;
+form.personal-info fieldset.personal-info p{
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
     color: #9699AB;
 }
 
-form fieldset label{
-}
-
-form fieldset input{
+form.personal-info fieldset.personal-info input{
     display: block;
     width: 100%;
     border: 1px solid #D6D9E6;
-    border-radius: 10px;
-    height: 50px;
-    margin-bottom: 20px;
+    border-radius: 0.625rem;
+    height: 3.125rem;
+    margin-bottom: 1.25rem;
+}
+form.personal-info fieldset.personal-info input.phone-number{
+    width:100% !important;
+    color: #02295A;
+    font-weight: bold;
+}
+
+form.personal-info fieldset.personal-info label{
+    color: #02295A;
+    display: block;
+    position: relative;
+}
+
+form.personal-info fieldset.personal-info label + input{
+    color: #02295A;
+    font-weight: bold;
+}
+form.personal-info fieldset.personal-info div.iti{
+    width: 100%;
+}
+form.personal-info fieldset.personal-info label + input::placeholder {
+    font-weight: normal;
+}
+form.personal-info fieldset.personal-info input.phone-number::placeholder {
+    font-weight: normal;
+}
+
+span.error{
+    position: absolute;
+    color: #da5565;
+    font-weight: bold;
+    right: 0;
 }

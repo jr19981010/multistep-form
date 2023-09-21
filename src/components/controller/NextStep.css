@@ -1,0 +1,21 @@
+button.next-step{
+    position: absolute;
+    background-color: #02295A;
+    color: white;
+    border-radius: 0.313rem;
+    height: 2.5rem;
+    right: 0;
+    margin-right: clamp(5%, 4vw, 10%);
+    cursor: pointer;
+    border: none;
+ }
+button.disabled {  
+    background-color: hsl(213, 62%, 34%);
+    cursor: not-allowed;
+  }
+
+button.confirm{
+  background-color: #392dd8;
+  ;
+}
+  

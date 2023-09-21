@@ -1,0 +1,11 @@
+button.go-back{
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: bold;
+    color: #9699AB;
+    border: none;
+}
+button.go-back:hover{
+    font-weight: bold;
+    color: #02295A;
+    cursor: pointer;
+}
