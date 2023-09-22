@@ -8,6 +8,7 @@ import { HandleInputProvider } from './HandleInput';
 import { HandlePlanProvider } from './HandlePlan';
 import { PickAddOnsProvider } from './HandlePickAddOns';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log("hello world!");
 root.render(
   
   <PickAddOnsProvider>
