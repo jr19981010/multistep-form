@@ -10,6 +10,14 @@ export const SplitScreen = ({children}) =>{
     let goBack = null;
     let nextStep = null;
     console.log(children, "this is children!")
+    React.Children.forEach(children, (child) => {
+        if (child && child.type && child.type.name) {
+          console.log(child.type.name);
+        }
+      });
+      
+
+
     React.Children.map(children, (child) =>{
         if( child && child.type && child.type.name){
             if( child.type.name === "Header"){
