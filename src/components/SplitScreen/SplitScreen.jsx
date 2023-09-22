@@ -10,12 +10,13 @@ export const SplitScreen = ({children}) =>{
     let goBack = null;
     let nextStep = null;
     console.log(children, "this is children!")
-    React.Children.forEach(children, (child) => {
+    
+    React.Children.forEach(children, (child, index) => {
         if (child && child.type && child.type.name) {
-          console.log(child.type.name);
+          console.log(`Child at index ${index}: ${child.type.name}`);
         }
       });
-            
+                  
 
 
     React.Children.map(children, (child) =>{
