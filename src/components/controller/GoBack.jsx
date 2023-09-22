@@ -15,7 +15,7 @@ export const GoBack =() =>{
         const newIndex = displayArray.findIndex((component) =>
         component === display);
         setNewDisplay(displayArray[newIndex - 1])
-
+// eslint-disable-next-line
     },[display]);
 
       const handleDisplay = () => {

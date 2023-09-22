@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, createContext, useContext } from "react";
 import intlTelInput from 'intl-tel-input';
 
 
@@ -41,9 +41,6 @@ export const HandleInputProvider = ({children}) =>{
           setCpElementReady(true);
           setCpElement(element);
     }
-
-
-
     
     let phoneInput;
 

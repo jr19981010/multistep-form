@@ -1,4 +1,4 @@
-import React, {useState, createContext, useContext, useEffect} from "react";
+import React, {useState, createContext, useContext, useEffect, useCallback} from "react";
 import { usePickAddOns } from "./HandlePickAddOns";
 const HandlePlan = createContext();
 
@@ -16,8 +16,6 @@ export const HandlePlanProvider = ({children}) => {
     const [proAmount, setProAmount] = useState(15);
 
 
-
-
     const handleArcade = (newArcade) => {
         setAcArcade(newArcade);
         if (newArcade) {
@@ -25,8 +23,7 @@ export const HandlePlanProvider = ({children}) => {
           setAcPro(false);
         }
     };
-      
-      
+       
       const handleAdvanced = (newAdvanced) => {
         setAcAdvanced(newAdvanced);
         if (newAdvanced) {
@@ -35,7 +32,7 @@ export const HandlePlanProvider = ({children}) => {
         }
     };
 
-        const handlePro = (newPro) => {
+       const handlePro = (newPro) => {
         setAcPro(newPro);
         if (newPro) {
           setAcArcade(false);
@@ -48,35 +45,32 @@ export const HandlePlanProvider = ({children}) => {
            handleCuProfile} = usePickAddOns();
 
 
-    useEffect(() =>{
-        
-        if(status){
-            setMonYr("yr");
+    const handleStatusChange = useCallback((status) => {
+            if (status) {
+              setMonYr("yr");
+              setArAmount(90);
+              setAdAmount(120);
+              setProAmount(150);
+            } else {
+              setMonYr("mo");
+              setArAmount(9);
+              setAdAmount(12);
+              setProAmount(15);
+            }
+          
+            if (status) {
+              handleOnService(false);
+              handleLaStorage(false);
+              handleCuProfile(false);
+            }
+    },[handleOnService, handleLaStorage, handleCuProfile]);
 
-            setArAmount(90);
-            setAdAmount(120);
-            setProAmount(150);
-
-            handleOnService(false);
-            handleLaStorage(false);
-            handleCuProfile(false);
-
-        }else{
-            setMonYr("mo");
-
-            setArAmount(9);
-            setAdAmount(12);
-            setProAmount(15);
-
-            handleOnService(false);
-            handleLaStorage(false);
-            handleCuProfile(false);
-
-
+    useEffect(() =>{    
+        handleStatusChange(status);
         }
+    ,[status, handleStatusChange]);
 
-    },[status]);
-
+    
     const handleCheckStatus = (newCheckStatus) =>{
         setStatus(newCheckStatus);
     }

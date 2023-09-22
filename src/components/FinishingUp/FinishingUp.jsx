@@ -25,7 +25,7 @@ export const FinishingUp = () => {
 
     setAddOnsSet(updateAddonSet);
     setPrice(updatePrice);
-    
+// eslint-disable-next-line
   }, [onService, laStorage, cuProfile]);
 
   let totalPrice = 0;

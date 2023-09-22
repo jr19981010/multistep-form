@@ -10,6 +10,7 @@ export const PersonalInfo = () => {
   const emailInput = useRef();
   const cpNumberInput = useRef();
 
+
   useEffect(() => {
     handleNameElement(nameInput.current);
     handleEmailElement(emailInput.current);
@@ -18,7 +19,10 @@ export const PersonalInfo = () => {
     nameInput.current.value = fullname;
     emailInput.current.value = email;
     cpNumberInput.current.value = cpNumber;
-  }, [fullname, email, cpNumber]);
+// eslint-disable-next-line
+  }, [fullname, email, cpNumber]); 
+
+
 
   return (
     <>
