@@ -7,7 +7,6 @@ export  const DisplayProvider = ({children}) =>{
 
     const changeDisplay = (newDisplay) => {
         setDisplay(newDisplay);
-        console.log(newDisplay)
     }
 
     return(

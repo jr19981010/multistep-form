@@ -11,14 +11,16 @@
   src: url('/assets/fonts/Ubuntu-Medium.ttf');
   src: url('/assets/fonts/Ubuntu-Regular.ttf');
 }
-body{
+div#root{
+  width: 100%;
+  height: 100vh;
   background-color: #F0F6FF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 550px) {
-body{
+div#root{
   align-items: flex-start;
 }
 }
