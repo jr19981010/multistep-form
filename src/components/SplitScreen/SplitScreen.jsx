@@ -15,7 +15,7 @@ export const SplitScreen = ({children}) =>{
           console.log(child.type.name);
         }
       });
-      
+            
 
 
     React.Children.map(children, (child) =>{
