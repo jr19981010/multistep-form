@@ -15,7 +15,7 @@ function App() {
   return (   
       <>
           <SplitScreen>
-              <Header/>
+              <Header/>Hello worlds!!!!!!!
               {console.log(display)}
               { display === "stepOne" && <PersonalInfo /> }
               { display === "stepTwo" && <SelectPlan /> }

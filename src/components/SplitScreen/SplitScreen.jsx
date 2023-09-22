@@ -1,5 +1,5 @@
-import './SplitScreen.css';
 import React from 'react';
+import './SplitScreen.css';
 import { useDisplay } from '../../DisplayContext';
 
 export const SplitScreen = ({children}) =>{
