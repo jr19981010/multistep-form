@@ -1,6 +1,6 @@
 form.personal-info{
     width: 100%;
-    margin-bottom: 12.5px;
+    margin-bottom: 12.5rem;
 }
 @media screen and (max-width: 34.375rem) {
     form.personal-info{

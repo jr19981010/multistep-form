@@ -14,6 +14,7 @@ export const SplitScreen = ({children}) =>{
         if( child && child.type && child.type.name){
             if( child.type.name === "Header"){
                 header = child;
+                console.log("header found!")
                 console.log(child.type.name)
             }else if(child.type.name === "PersonalInfo" ||
                      child.type.name === "SelectPlan" ||
@@ -21,6 +22,7 @@ export const SplitScreen = ({children}) =>{
                      child.type.name === "FinishingUp"||
                      child.type.name === "ThankYou"){
                 main = child;
+                console.log("main found!")
 
                 console.log(child.type.name)
 
@@ -28,10 +30,12 @@ export const SplitScreen = ({children}) =>{
 
                 goBack = child;
                 console.log(child.type.name)
+                console.log("goBack found!")
 
             }else if(child.type.name === "NextStep"){
                 nextStep = child;
                 console.log(child.type.name)
+                console.log("next Step found")
             }
         }
     })
