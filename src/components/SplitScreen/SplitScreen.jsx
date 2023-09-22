@@ -14,16 +14,24 @@ export const SplitScreen = ({children}) =>{
         if( child && child.type && child.type.name){
             if( child.type.name === "Header"){
                 header = child;
+                console.log(child.type.name)
             }else if(child.type.name === "PersonalInfo" ||
-                     child.type.name ==="SelectPlan" ||
-                     child.type.name ==="PickAddOns" ||
-                     child.type.name ==="FinishingUp"||
-                     child.type.name ==="ThankYou"){
+                     child.type.name === "SelectPlan" ||
+                     child.type.name === "PickAddOns" ||
+                     child.type.name === "FinishingUp"||
+                     child.type.name === "ThankYou"){
                 main = child;
+
+                console.log(child.type.name)
+
             }else if(child.type.name === "GoBack"){
+
                 goBack = child;
+                console.log(child.type.name)
+
             }else if(child.type.name === "NextStep"){
                 nextStep = child;
+                console.log(child.type.name)
             }
         }
     })
