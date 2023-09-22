@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.43fc80d2.css",
+    "main.js": "/static/js/main.dde25984.js",
+    "static/js/787.5cdebd02.chunk.js": "/static/js/787.5cdebd02.chunk.js",
+    "static/media/Ubuntu-Regular.ttf": "/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Medium.ttf": "/static/media/Ubuntu-Medium.e37c5546eb1a6efc4818.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/flags@2x.png?1": "/static/media/flags@2x.276410ffdcdd2ff8dca2.png",
+    "static/media/flags.png?1": "/static/media/flags.1952df896c6a79bb730c.png",
+    "static/media/bg-sidebar-desktop.svg": "/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
+    "static/media/bg-sidebar-mobile.svg": "/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
+    "static/media/icon-advanced.svg": "/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
+    "static/media/icon-thank-you.svg": "/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
+    "static/media/icon-pro.svg": "/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
+    "index.html": "/index.html",
+    "static/media/icon-arcade.svg": "/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
+    "main.43fc80d2.css.map": "/static/css/main.43fc80d2.css.map",
+    "main.dde25984.js.map": "/static/js/main.dde25984.js.map",
+    "787.5cdebd02.chunk.js.map": "/static/js/787.5cdebd02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43fc80d2.css",
+    "static/js/main.dde25984.js"
+  ]
+}
