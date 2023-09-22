@@ -9,7 +9,7 @@ export const SplitScreen = ({children}) =>{
     let main = null;
     let goBack = null;
     let nextStep = null;
-    console.log(children)
+    console.log(children, "this is children!")
     React.Children.map(children, (child) =>{
         if( child && child.type && child.type.name){
             if( child.type.name === "Header"){
